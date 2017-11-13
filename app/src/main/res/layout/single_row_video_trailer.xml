@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@android:color/white"
+    >
+<ImageView
+    android:id="@+id/trailer_video"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:src="@drawable/video"
+    android:scaleType="centerCrop"
+    android:background="#112233"
+    />
+    <TextView
+        android:id="@+id/trailer_name"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:text="trailer1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textColor="#df0505"
+        />
+</LinearLayout>

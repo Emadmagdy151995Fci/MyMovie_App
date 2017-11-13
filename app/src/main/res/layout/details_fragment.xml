@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#000000"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="Title"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:background="#8d219ea9"
+            android:textColor="#b70707"
+            android:id="@+id/title"
+            />
+        <LinearLayout
+
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/pic"
+                android:scaleType="centerInside"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="5dp"
+                android:id="@+id/poster"
+
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="year"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/year"
+                    android:textColor="#df0505"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="vote"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/vote"
+                    android:textColor="#df0505"
+                    android:layout_marginTop="15dp"
+                    />
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#fd1d8e7d"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#060606"
+                    android:checked="false"
+                    android:textOff="Add"
+                    android:textOn="Fav"
+
+                    android:id="@+id/fav"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poster"
+            android:text="description"
+            android:padding="5dp"
+            android:id="@+id/description"
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"
+            android:textColor="#df0505"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Trailers:-"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+
+
+            />
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:background="#208f8b"
+            android:text="Videos"
+            android:id="@+id/btn_videos"
+            />
+        <ListView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/lv_video"
+            android:visibility="gone"
+            ></ListView>
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#208f8b"
+            android:text="Reviews"
+            android:id="@+id/btn_reviews"
+            />
+
+        <ListView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:id="@+id/lv_review"
+            android:visibility="gone"
+
+            ></ListView>
+
+
+    </LinearLayout>
+</ScrollView>
